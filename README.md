@@ -2,4 +2,4 @@
 
 Here is the architecture for the system:
 
-![Architecture Diagram](Acrhiecture.png)
+![Architecture Diagram](Architecture.png)
