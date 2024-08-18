@@ -28,3 +28,6 @@ To ensure that the system can handle a large number of projects (100+) while mai
 ### 5. User-Specific Query Optimization
 - **Personalized Caching**: Results are cached at a user or project level, ensuring repeated queries benefit from lower latency.
 
+### Other Things to add to reduce latency
+- **Load Balancer**
+- **Mircoservice architecture**
