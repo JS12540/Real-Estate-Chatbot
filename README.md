@@ -31,3 +31,4 @@ To ensure that the system can handle a large number of projects (100+) while mai
 ### Other Things to add to reduce latency
 - **Load Balancer**
 - **Mircoservice architecture**
+- **Using Groq**: Groq is used for fast AI inferencing which reduces time for response.
