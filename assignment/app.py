@@ -34,10 +34,8 @@ async def submit_query(query):
         if classification == "information_retrieval":
             results = avs.retrieve(query=query)
             logger.info(f"Length of results: {len(results)}")
-            # Extract and merge text from results
             merged_text = " ".join(doc.page_content for doc in results)
             logger.info("Sending text to generate bot response")
-            # Generate a response using the merged text
             bot_response = await generate_response(merged_text)
             return {"bot_response": bot_response}
         elif classification == "inventory":

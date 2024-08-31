@@ -32,3 +32,23 @@ To ensure that the system can handle a large number of projects (100+) while mai
 - **Load Balancer**
 - **Mircoservice architecture**
 - **Using Groq**: Groq is used for fast AI inferencing which reduces time for response.
+
+## Software Design Principles
+
+In software development, certain principles stand as the bedrock for writing code that is not only functional but also clean, maintainable, and efficient. Please follow this software Design principles:
+
+1) Keep It Simple, Stupid (KISS)
+2) Don't Repeat Yourself (DRY)
+3) You Aren't Gonna Need It (YAGNI)
+4) Encapsulate What Varies
+5) Program to an Interface, Not an Implementation
+6) Favor Composition Over Inheritance
+7) Strive for Loosely Coupled Designs
+8) The Law of Demeter
+9) SOLID Principles
+  - Single Responsibility Principle (SRP)
+  - Open/Closed Principle (OCP)
+  - Liskov Substitution Principle (LSP)
+  - Interface Segregation Principle (ISP)
+  - Dependency Inversion Principle (DIP)
+
