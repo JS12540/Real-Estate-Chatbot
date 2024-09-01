@@ -14,3 +14,4 @@ openpyxl
 tabulate
 streamlit
 markdown
+fuzzywuzzy

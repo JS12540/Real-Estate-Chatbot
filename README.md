@@ -52,3 +52,34 @@ In software development, certain principles stand as the bedrock for writing cod
   - Interface Segregation Principle (ISP)
   - Dependency Inversion Principle (DIP)
 
+
+## Techniques used to reduce latency
+
+### Exact Search
+Exact search, also known as exact match or precise search, looks for results that perfectly match the given query. It returns only items that have an exact correspondence with the search terms.
+
+### Fuzzy Search
+Fuzzy search is a technique that finds approximate matches to search terms. It allows for minor differences or errors in the query, such as misspellings or slight variations, and still returns relevant results.
+
+### Results
+
+#### Time for Retrieval
+
+| Condition | Status | Time | Size |
+|-----------|--------|------|------|
+| Initial | 200 OK | 8.84 s | 3.51 KB |
+| After Exact Query Match Caching | 200 OK | 19 ms | 3.51 KB |
+| After Fuzzy Search Caching | 200 OK | 161 ms | 223 B |
+
+#### Time for SQL Query Executor
+
+| Condition | Status | Time | Size |
+|-----------|--------|------|------|
+| Initial | 200 OK | 3.97 s | 12.59 KB |
+| After Exact Query Match Caching | 200 OK | 23 ms | 12.59 KB |
+| After Fuzzy Search Caching | 200 OK | 49 ms | 12.59 KB |
+
+Note: There is a flaw in Fuzzy search matching it just mesaures how similar words are not meaning, For example:
+"List of properties which are sold" and "List of properties which are not sold" will have same matching
+
+#### Upcoming: Sematic search caching
