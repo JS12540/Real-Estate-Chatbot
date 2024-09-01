@@ -61,6 +61,10 @@ Exact search, also known as exact match or precise search, looks for results tha
 ### Fuzzy Search
 Fuzzy search is a technique that finds approximate matches to search terms. It allows for minor differences or errors in the query, such as misspellings or slight variations, and still returns relevant results.
 
+### Semantic Search Caching
+Semantic search caching is a technique where the meaning of queries is analyzed, and similar queries are cached together. This reduces latency by retrieving cached responses for semantically similar queries, rather than re-executing complex search processes.
+
+
 ### Results
 
 #### Time for Retrieval
@@ -82,4 +86,9 @@ Fuzzy search is a technique that finds approximate matches to search terms. It a
 Note: There is a flaw in Fuzzy search matching it just mesaures how similar words are not meaning, For example:
 "List of properties which are sold" and "List of properties which are not sold" will have same matching
 
-#### Upcoming: Sematic search caching
+#### Time for Sematic search caching
+
+| Condition                   | Status | Time   | Size    |
+|-----------------------------|--------|--------|---------|
+| Before Semantic Caching      | 200 OK | 3.83 s | 17.08 KB |
+| After Semantic Caching       | 200 OK | 453 ms | 17.08 KB |
